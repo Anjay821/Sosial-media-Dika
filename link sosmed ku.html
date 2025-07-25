@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      color: white;
+    }.logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid white;
+}
+
+.links {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  width: 150%;
+  max-width: 600px;
+}
+
+.link-button {
+  text-decoration: none;
+  color: white;
+  background: rgba(0,0,0,0.6);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.link-button:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+}
+
+.intro button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="backsound.AAC" type="audio/ACC"
+    ></audio>  <div class="intro">
+    <h1>Kenalan yuk!</h1>
+    <input type="text" placeholder="isi nama,klo ga mau lajut aja.">
+    <br>
+    <button onclick="startApp()">Lanjut</button>
+  </div>  <div class="main-content" style="display:none; flex-direction:column; align-items:center;">
+    <img src="logo.png" alt="Logo Kamu" class="logo"><div class="links">
+  <a class="link-button" href="https://tiktok.com/@perseverancee001" target="_blank">TikTok</a>
+  <a class="link-button" href="https://x.com/Nevy_Celestnova?t=oPGGhjXoDUJfwrchr95L7Q&s=09"target="_blank">Twitter</a>
+  <a class="link-button" href="https://www.instagram.com/hoshinovaz?igsh=MTRuanVya3lpY3p4Ng==" target="_blank">Instagram</a>
+  <a class="link-button" href="https://youtube.com/@nevycelestnova_rajamalam?si=nfO-Gv0lm8v_6L78" target="_blank">YouTube</a>
+  <a class="link-button" href="https://trakteer.id/itssdikafr/tip" target="_blank">Trakteer</a>
+  <a class="link-button" href="https://whatsapp.com/channel/0029Vb8xpHz0QeaoDtT1UW0c" target="_blank">Saluran WhatsApp</a>
+</div>
+
+  </div>  <script>
+    function startApp() {
+      document.querySelector('.intro').style.display = 'none';
+      document.querySelector('.main-content').style.display = 'flex';
+      document.querySelector('.links').style.display = 'flex';
+    }
+  </script></body>
+</html>
